@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'MontserratVariable';
+  src: url(../fonts/Montserrat-Variable.ttf);
+}
+
+@font-face {
+  font-family: 'KablammoVariable';
+  src: url(../fonts/Kablammo-Variable.ttf);
+}
+
+@font-face {
+  font-family: 'ShantellSansVariable';
+  src: url(../fonts/ShantellSans-VariableFont.ttf);
+}
+
+@font-face {
+  font-family: 'SourceCodeProVariable';
+  src: url(../fonts/SourceCodePro-Variable.ttf);
+}
+
+@font-face {
+  font-family: 'TekturVariable';
+  src: url(../fonts/Tektur-Variable.ttf);
+}
 /**********/
 /* COLORS */
 /**********/
@@ -11,43 +35,56 @@
 
 
 
-
 /***************/
 /* BLACK WHITE */
 /***************/
 
 li:nth-of-type(1) {
   /* JOUW CODE HIER */
-  
-  
+  display: grid;
+  align-content: center;
+  background-image: linear-gradient(
+    -10deg,
+    var(--rood) 50%,
+    var(--wit) 0
+    );  
 }
 
 
 /* beide spans */
 li:nth-of-type(1) span {
   /* JOUW CODE HIER */
-  
-  
+  text-transform: uppercase;
+  rotate: -10deg;
+  font-family: 'MontserratVariable';
+  font-size: 2.5em;
+  text-align: center;
+
+  transition: 1.2s;
 }
 
 
 /* eerste span */
 li:nth-of-type(1) span:nth-of-type(1) {
   /* JOUW CODE HIER */
-  
-  
+  font-weight: 850;
+  color: var(--rood);
 }
-
 
 /* tweede span */
 li:nth-of-type(1) span:nth-of-type(2) {
   /* JOUW CODE HIER */
-  
-  
+  font-weight: 150;
+  color: var(--wit);
 }
 
+li:nth-of-type(1):hover span:nth-of-type(1) {
+  font-weight: 150;
+}
 
-
+li:nth-of-type(1):hover span:nth-of-type(2) {
+  font-weight: 850;
+}
 
 
 /**************/
@@ -56,54 +93,63 @@ li:nth-of-type(1) span:nth-of-type(2) {
 
 li:nth-of-type(2) {
   /* JOUW CODE HIER */
-  
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--wit); 
+  gap:1px;
+  align-items: center; 
+
 }
 
 
 /* alle spans */
 li:nth-of-type(2) span {
   /* JOUW CODE HIER */
-  
-  
+  font-family: 'MontserratVariable';
+  aspect-ratio: 1/1;
+  color: var(--wit);  
+  gap: 1px;
+  background-color:var(--groen) ;
+
+  display:grid;
+  place-items: center;
 }
 
 
 /* span 1 t/m 9 */
 li:nth-of-type(2) span:nth-of-type(1) { 
-   /* JOUW CODE HIER */
-  
+  font-weight: 113;  
 }
 li:nth-of-type(2) span:nth-of-type(2) { 
-  /* JOUW CODE HIER */
+  font-weight: 227;  
   
 }
 li:nth-of-type(2) span:nth-of-type(3) { 
-  /* JOUW CODE HIER */
+  font-weight: 289;  
   
 }
 li:nth-of-type(2) span:nth-of-type(4) { 
-  /* JOUW CODE HIER */
+  font-weight: 367;  
   
 }
 li:nth-of-type(2) span:nth-of-type(5) { 
-  /* JOUW CODE HIER */
+  font-weight: 453;  
   
 }
 li:nth-of-type(2) span:nth-of-type(6) { 
-  /* JOUW CODE HIER */
+  font-weight: 563;  
   
 }
 li:nth-of-type(2) span:nth-of-type(7) { 
-  /* JOUW CODE HIER */
+  font-weight: 613;  
   
 }
 li:nth-of-type(2) span:nth-of-type(8) { 
-  /* JOUW CODE HIER */
+  font-weight: 747;  
   
 }
 li:nth-of-type(2) span:nth-of-type(9) { 
-  /* JOUW CODE HIER */
+  font-weight: 899;  
   
 }
 
