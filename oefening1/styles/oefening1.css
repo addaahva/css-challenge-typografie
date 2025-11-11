@@ -4,13 +4,16 @@
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  /* regular / 400 */
+  font-family: 'ExpletusSans';
+  src: url('../fonts/ExpletusSans-Regular.ttf');
+  font-weight: 400 ;
 
 }
 
 @font-face {
-  /* bold / 700 */
-
+ font-family: 'ExpletusSansBold';
+ src: url('../fonts/ExpletusSans-Bold.ttf');
+ font-weight: 700;
 }
 
 
@@ -21,21 +24,21 @@ li:first-of-type {
 
 li:first-of-type h2 {
   /* JOUW CODE HIER */
-  
+  font-size: 2em;
 
 }
 
 li:first-of-type p {
   /* JOUW CODE HIER */
-  
+  font-family: 'ExpletusSans';
 
 }
 
 /* hiermee selecteer je de eerste letter van de p in het eerste blokje */
 li:first-of-type p::first-letter {
   /* JOUW CODE HIER */
-
-  
+  font-family: 'ExpletusSansBold';
+  font-size: 2em;
 }
 
 
